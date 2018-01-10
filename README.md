@@ -13,4 +13,4 @@ CMD mvn clean package -DskipTests
 
 ### Mulit stage docker项目配置
 
-可查看[`Mulit stage docker`](http://10.0.2.50:180/wingrow)介绍。
+可查看[`Mulit stage docker`](https://docs.docker.com/engine/userguide/eng-image/multistage-build/)介绍。
