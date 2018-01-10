@@ -1,0 +1,6 @@
+FROM maven:3-jdk-8-alpine as builder
+COPY . /src
+RUN  cd src && mvn  --settings ./settings.xml -DskipTests=true clean package
+
+FROM 10.0.2.50/cicd/tomcat:v1.6
+COPY --from=builder /src/target/ciexample-0.0.1-SNAPSHOT.war /root/tomcat/webapps/ROOT.war

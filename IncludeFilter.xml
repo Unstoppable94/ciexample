@@ -1,0 +1,5 @@
+<FindBugsFilter>
+<Match>
+      <Bug pattern="UUF_UNUSED_FIELD" />
+</Match>
+</FindBugsFilter>
